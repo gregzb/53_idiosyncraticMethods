@@ -78,6 +78,10 @@ public class List_inArraySlots<T> {
         return add(value, capacity);
     }
 
+    public boolean addAsHead(T value) {
+        return add(value, 0);
+    }
+
     public boolean add( T value, int index) {
         if (index > capacity || index < 0) {
             throw new IndexOutOfBoundsException();
